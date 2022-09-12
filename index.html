@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+    <header class="jumbotron">
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main class="row">
+        <div class="col-3 sidebar" id="sidebar">
+            <h2 class="row col-12">Search for a City:</h2>
+            <input type="text" name="city-search" id="city-search" value="Atlanta" class="row col-12">
+            <p class="row col-12 all-btn" id="search-btn">Search</p>
+            <p class="row col-12 all-btn city-btn" id="city-0">Austin</p>
+            <p class="row col-12 all-btn city-btn" id="city-1">Chicago</p>
+            <p class="row col-12 all-btn city-btn" id="city-2">New York</p>
+            <p class="row col-12 all-btn city-btn" id="city-3">Orlando</p>
+            <p class="row col-12 all-btn city-btn" id="city-4">San Francisco</p>
+        </div>
+        <div class="col-9">
+            <section class="current-forecast">
+                <div class="row col-12" >
+                    <h2 id="city">Atlanta </h2>
+                    <img src="http://openweathermap.org/img/wn/10d.png" alt="weather img" id="city-img">
+                </div>
+                <p class="row col-12" id="temp">Temp: </p>
+                <p class="row col-12" id="wind">Wind: </p>
+                <p class="row col-12" id="humidity">Humidity: </p>
+                <p class="row col-12" id="feels-like">Feels like: </p>
+            </section>
+            <section class="col-12">
+                <h3>5-Day Forecast</h3>
+                <div class="row col-12">
+                    <div class="card">
+                        <div class="row">
+                            <h4 class="col-6" id="day-0"></h4>
+                            <img src="#" alt="daily forecast icon" id="icon-0">
+                        </div>
+                        <p id="high-0"></p>
+                        <p id="low-0"></p>
+                        <p id="wind-0"></p>
+                        <p id="humidity-0"></p>
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <h4 class="col-6" id="day-1"></h4>
+                            <img src="#" alt="daily forecast icon" id="icon-1">
+                        </div>
+                        <p id="high-1"></p>
+                        <p id="low-1"></p>
+                        <p id="wind-1"></p>
+                        <p id="humidity-1"></p>
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <h4 class="col-6" id="day-2"></h4>
+                            <img src="#" alt="daily forecast icon" id="icon-2">
+                        </div>
+                        <p id="high-2"></p>
+                        <p id="low-2"></p>
+                        <p id="wind-2"></p>
+                        <p id="humidity-2"></p>
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <h4 class="col-6" id="day-3"></h4>
+                            <img src="#" alt="daily forecast icon" id="icon-3">
+                        </div>
+                        <p id="high-3"></p>
+                        <p id="low-3"></p>
+                        <p id="wind-3"></p>
+                        <p id="humidity-3"></p>
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <h4 class="col-6" id="day-4"></h4>
+                            <img src="#" alt="daily forecast icon" id="icon-4">
+                        </div>
+                        <p id="high-4"></p>
+                        <p id="low-4"></p>
+                        <p id="wind-4"></p>
+                        <p id="humidity-4"></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
