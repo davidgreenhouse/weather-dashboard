@@ -70,6 +70,32 @@ function humidityRange(data, i, indexArr) {
     document.getElementById(humidId).innerHTML = 'Humidity: ' + Math.round(lowHumid) + '-' + Math.round(highHumid) + '%'
 }
 
+function setCities() {
+    for(
+    }
+}
+
+
+searchBtn.addEventListener('click', function(){
+    validCity = true
+    getApi()
+    console.log(validCity)
+    if(validCity) {
+        recordSearch()
+    }
+    // recordSearch()
+})
+
+for(i = 0; i < 5; i++) {
+    let oldCityBtn = 'city-' + i
+    document.getElementById(oldCityBtn).addEventListener('click', function(target) {
+        document.getElementById('city-search').value = document.getElementById(oldCityBtn).innerHTML
+        getApi()
+    })
+}
+initialCities()
+getApi()
+
 
 
 
